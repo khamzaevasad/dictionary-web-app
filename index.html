@@ -66,20 +66,21 @@
       <!-- Content -->
       <section class="container">
         <!-- Search panel -->
-        <form class="search-form">
+        <form id="form" class="search-form">
           <label class="form-label">
             <input
+              id="searchTerm"
               class="search-input"
               type="text"
               placeholder="Search for any word…"
             />
-            <button class="search-btn">
+            <button id="searchBtn" class="search-btn">
               <img src="./images/icon-search.svg" alt="search-icon" />
             </button>
           </label>
         </form>
 
-        <div class="hidden">
+        <div id="wordContainer" class="">
           <!-- Main title -->
           <div class="main-title-wrapper">
             <div class="title-box">
@@ -240,7 +241,7 @@
       </section>
 
       <!-- Empty -->
-      <section class="container">
+      <section class="container hidden">
         <div class="empty-container">
           <p class="smile">😕</p>
           <p class="empty-title">No Definitions Found</p>
