@@ -1,0 +1,113 @@
+// /* Aliquam Regular */
+// @font-face {
+//   font-family: "Aliquam";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("../fonts/Aliquam.woff2") format("woff2"),
+//     url("../fonts/Aliquam.woff") format("woff");
+// }
+
+// /* Aliquam Italic */
+// @font-face {
+//   font-family: "Aliquam";
+//   font-style: italic;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("../fonts/Aliquam-Italic.woff2") format("woff2"),
+//     url("../fonts/Aliquam-Italic.woff") format("woff");
+// }
+
+// /* Aliquam UltraLight */
+// @font-face {
+//   font-family: "Aliquam";
+//   font-style: normal;
+//   font-weight: 200;
+//   font-display: swap;
+//   src: url("../fonts/Aliquam-UltraLight.woff2") format("woff2"),
+//     url("../fonts/Aliquam-UltraLight.woff") format("woff");
+// }
+
+// /* Aliquam UltraLight Italic */
+// @font-face {
+//   font-family: "Aliquam";
+//   font-style: italic;
+//   font-weight: 200;
+//   font-display: swap;
+//   src: url("../fonts/Aliquam-UltraLightItalic.woff2") format("woff2"),
+//     url("../fonts/Aliquam-UltraLightItalic.woff") format("woff");
+// }
+
+/* ========== Sans Serif ========== */
+/* Aliquam Regular */
+@font-face {
+  font-family: "Aliquam Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Aliquam.woff2") format("woff2"),
+    url("../fonts/Aliquam.woff") format("woff");
+}
+
+/* Aliquam Italic */
+@font-face {
+  font-family: "Aliquam Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Aliquam-Italic.woff2") format("woff2"),
+    url("../fonts/Aliquam-Italic.woff") format("woff");
+}
+
+/* Aliquam UltraLight */
+@font-face {
+  font-family: "Aliquam Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/Aliquam-UltraLight.woff2") format("woff2"),
+    url("../fonts/Aliquam-UltraLight.woff") format("woff");
+}
+
+/* Aliquam UltraLight Italic */
+@font-face {
+  font-family: "Aliquam Sans";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/Aliquam-UltraLightItalic.woff2") format("woff2"),
+    url("../fonts/Aliquam-UltraLightItalic.woff") format("woff");
+}
+
+/* ========== Serif ========== */
+/* Agar Aliquam serif varianti bo‘lmasa, fallback serif ishlaydi */
+@font-face {
+  font-family: "Aliquam Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Times New Roman"), local("Georgia");
+}
+
+/* ========== Monospace ========== */
+/* Aliquam font monospace emas, shuning uchun monospace fallback */
+@font-face {
+  font-family: "Aliquam Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Courier New"), local("Consolas"), local("Fira Code");
+}
+
+/* ===== Usage Helpers ===== */
+.sans {
+  font-family: "Aliquam Sans", sans-serif;
+}
+
+.serif {
+  font-family: "Aliquam Serif", serif;
+}
+
+.mono {
+  font-family: "Aliquam Mono", monospace;
+}

@@ -1,0 +1,82 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5.8rem;
+  margin-bottom: 5.1rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.fonts-label {
+  position: relative;
+  flex: 1;
+  border-right: 1px solid #e9e9e9;
+}
+
+.fonts-label select {
+  width: 100%;
+  padding: 1rem 4rem 1rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  appearance: none;
+  background: transparent;
+  font-family: inherit;
+}
+.icon-arrow {
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+// switch toggler
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.toggle {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  background: var(--color-switch);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background: #ffff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.slider:hover {
+  background: #fff;
+}
+
+input:checked + .slider {
+  transform: translateX(24px);
+  background: #fff;
+}

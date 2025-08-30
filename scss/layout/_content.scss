@@ -1,0 +1,159 @@
+.main-title-wrapper {
+  margin-top: 4.5rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.8rem;
+}
+.promotion {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--color-purple);
+}
+
+.player-btn {
+  cursor: pointer;
+}
+
+.meaning-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meaning-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-text-primary);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.line {
+  width: 85%;
+  border: solid 1px var(--color-border);
+}
+
+.meaning-lists {
+  display: flex;
+  flex-direction: column;
+}
+.meaning-subtitle {
+  font-size: 2rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list-subtitle {
+  color: var(--color-text-primary);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin-top: 1.3rem;
+}
+.ovel {
+  margin-left: 2.2rem;
+  margin-right: 0.9rem;
+}
+
+.meaning-footer {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  gap: 2.2rem;
+}
+
+.footer-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+.footer-bold {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-purple);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--color-purple);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.word-ex {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.line-full {
+  width: 100%;
+  border: solid 1px var(--color-border);
+  margin-top: 4rem;
+  margin-bottom: 1.9rem;
+}
+
+.link-wrapper {
+  display: flex;
+  justify-content: start;
+}
+.link-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+.src-link {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-right: 0.9rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.empty-container {
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.smile {
+  font-size: 6.4rem;
+}
+.empty-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+.empty-subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 2.4rem;
+}
