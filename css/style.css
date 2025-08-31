@@ -478,7 +478,8 @@ main {
   border: solid 1px var(--color-border);
 }
 
-.meaning-lists {
+.meaning-lists,
+.verb-meaning-lists {
   display: flex;
   flex-direction: column;
 }
