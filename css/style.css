@@ -722,6 +722,17 @@ input:checked + .slider {
   cursor: pointer;
 }
 
+.error {
+  border: 1px solid var(--color-red) !important;
+}
+
+.error-subtitle {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--color-red);
+  margin-top: 0.8rem;
+}
+
 [data-theme=dark] {
   --color-background: #050505;
   --color-surface: #1f1f1f;

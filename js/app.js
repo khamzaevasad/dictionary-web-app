@@ -7,8 +7,9 @@ const player = document.getElementById("player");
 const playerBtn = document.getElementById("playerBtn");
 const searchBtn = document.getElementById("searchBtn");
 const nounMeaningContainer = document.querySelector(".meaning-lists");
-const verbMeaningLists = document.querySelector(".verb-meaning-lists");
+const errorMessage = document.querySelector(".error-message");
 const empty = document.getElementById("empty");
+const input = document.getElementById("searchTerm");
 
 playerBtn.addEventListener("click", () => {
   if (player.paused) {
@@ -23,7 +24,20 @@ playerBtn.addEventListener("click", () => {
 searchBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   nounMeaningContainer.innerHTML = "";
-  let searchVal = document.getElementById("searchTerm").value;
+  let searchVal = document
+    .getElementById("searchTerm")
+    .value.toLowerCase()
+    .trim();
+
+  if (!searchVal) {
+    input.classList.add("error");
+    errorMessage.classList.remove("hidden");
+    return;
+  } else {
+    input.classList.remove("error");
+    errorMessage.classList.add("hidden");
+  }
+
   const data = await getData(`${url}${searchVal}`);
 
   if (!data || data.length === 0) {
