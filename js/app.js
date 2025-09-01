@@ -10,6 +10,12 @@ const nounMeaningContainer = document.querySelector(".meaning-lists");
 const errorMessage = document.querySelector(".error-message");
 const empty = document.getElementById("empty");
 const input = document.getElementById("searchTerm");
+const fonts = document.getElementById("fonts");
+const body = document.querySelector(".body");
+
+fonts.addEventListener("change", (e) => {
+  body.className = e.target.value;
+});
 
 playerBtn.addEventListener("click", () => {
   if (player.paused) {
@@ -46,6 +52,7 @@ searchBtn.addEventListener("click", async (e) => {
     return;
   } else {
     wordContainer.classList.remove("hidden");
+    empty.classList.add("hidden");
   }
 
   const item = data[0];
