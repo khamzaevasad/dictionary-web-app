@@ -38,10 +38,12 @@ searchBtn.addEventListener("click", async (e) => {
   if (!searchVal) {
     input.classList.add("error");
     errorMessage.classList.remove("hidden");
+    wordContainer.classList.add("hidden");
     return;
   } else {
     input.classList.remove("error");
     errorMessage.classList.add("hidden");
+    wordContainer.classList.remove("hidden");
   }
 
   const data = await getData(`${url}${searchVal}`);
