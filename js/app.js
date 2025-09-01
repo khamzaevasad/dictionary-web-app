@@ -62,8 +62,6 @@ searchBtn.addEventListener("click", async (e) => {
     m.definitions.map((d) => d.definition)
   );
 
-  console.log(verbDefinitions);
-
   if (item) {
     const searchTitle = document.querySelector(".search-title");
     const promotion = document.querySelector(".promotion");
