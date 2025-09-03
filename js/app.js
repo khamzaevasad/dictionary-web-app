@@ -11,7 +11,7 @@ const errorMessage = document.querySelector(".error-message");
 const empty = document.getElementById("empty");
 const input = document.getElementById("searchTerm");
 const fonts = document.getElementById("fonts");
-const body = document.querySelector(".body");
+const body = document.querySelector("body");
 
 fonts.addEventListener("change", (e) => {
   body.className = e.target.value;
