@@ -25,9 +25,9 @@
               alt="arrow-icon"
             />
             <select class="fonts-container" name="fonts" id="fonts">
-              <option value="sansSerif">Sans Serif</option>
-              <option value="serif">Serif</option>
-              <option value="mono">Mono</option>
+              <option class="sansSerif" value="sansSerif">Sans Serif</option>
+              <option class="serif" value="serif">Serif</option>
+              <option class="mono" value="mono">Mono</option>
             </select>
           </label>
 
@@ -157,7 +157,7 @@
           <!-- Source link -->
           <div class="link-wrapper">
             <p class="link-subtitle">Source</p>
-            <div>
+            <div class="link-box">
               <a target="_blank" id="srcWord" class="src-link" href="#"
                 >https://en.wiktionary.org/wiki/keyboard</a
               >
@@ -198,9 +198,16 @@
     </main>
     <!-- MAIN END -->
 
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
+    <!-- LOADER START -->
+    <div class="hidden overlay" id="overlay">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- LOADER END -->
 
     <script type="module" src="./js/app.js"></script>
   </body>
